@@ -5,20 +5,29 @@
 
 int main(int argc, char *argv[]) {
 	
-	int sum= 0;
-	int x;
-	int i; 
+	int a;
+	int b;
+	char op; 
+	int result;
+
+	printf("식을 입력하세요:");
+	scanf("%d %c %d",&a,&op,&b); 
 	
-	printf("input a number:");
-	scanf("%d", &x);
-	
-	for(i=0; i<=x; i++){
+{
+	if (op == '+')
+		result = a+b;	
 		
-		sum=sum+i;
-	}
+	else if (op == '-')	
+		result = a-b;
+	
 
+	else if (op == '*')	
+		result = a*b;	
 
-printf("%d",sum);	
-
+	else 
+		result = a/b;}
+	
+printf("%d",result);	
 	 
+
 }
