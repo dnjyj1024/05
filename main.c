@@ -5,29 +5,23 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a;
-	int b;
-	char op; 
-	int result;
-
-	printf("식을 입력하세요:");
-	scanf("%d %c %d",&a,&op,&b); 
+	int answer = 59;
+	int x;
+	int trial = 0;
 	
-{
-	if (op == '+')
-		result = a+b;	
-		
-	else if (op == '-')	
-		result = a-b;
-	
-
-	else if (op == '*')	
-		result = a*b;	
-
-	else 
-		result = a/b;}
-	
-printf("%d",result);	
-	 
-
+do
+{ printf("숫자를 입력하세요:\n");
+  scanf("%d", &x);
+   
+  if (x>answer)
+  	printf("숫자가 더 큽니다.\n"); 
+  else if (x<answer)
+  	printf("숫자가 더 작습니다.\n"); 
+  	trial = trial + 1; 
+  
 }
+while(x != 59);
+
+ printf("number of trial = %i\n", trial);
+}
+
